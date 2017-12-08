@@ -16,6 +16,7 @@ services:
       - php7
     volumes:
       - ./nginx/server.conf:/etc/nginx/conf.d/server.conf
+      - ./nginx/logs:/var/log/nginx
     volumes_from:
       - wwwdata
   php7:
